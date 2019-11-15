@@ -60,9 +60,25 @@ p {
 .custom-input-button:hover, .custom-input-button:active, .custom-input-button:focus {
   background-color: #cb6f2c;
 }
+.btn-round {
+  border-radius: 100px;
+  border:1px solid #000;
+  color: #000;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 
 
+
+/* NAVBAR */
+.navbar-brand-custom {
+  height: 65px;
+}
+
+.navbar-brand-custom img {
+  height: 100%;
+}
 
 
 /* JUMBOTRON */
@@ -206,6 +222,11 @@ p {
 
 /* DOWNLOAD */
 
+.download {
+  position: relative;
+  padding-top: 3rem;
+}
+
 .contact {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -229,11 +250,57 @@ p {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+.download-sketch {
+  height: 200px;
+  width: 100%;
+  background-image: url('assets/PNG/slice5_lg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  position: absolute;
+  top: -143px;
+  right: 150px;
+}
+.download-symbol {
+ height: 70px;
+  width: 70px;
+  background-image: url('assets/PNG/slice6_lg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  position: absolute;
+  right: 50%;
+  left: 40%;
+  top: 70px;
+}
+
+
+
+
+/* CLOUD 420 */
+.cloud-bg {
+  background-image: url('./assets/PNG/clouds_lg.png');
+  background-repeat: no-repeat;
+  height: 190px;
+  background-position: center -50px;
+  background-size: cover;
+  position: relative;
+  margin-bottom: -160px;
+}
+
+
+
+
+
 
 
 
 
 /* footer */
+
+.page-footer {
+  padding-top: 120px;
+}
 
 .footer a, .footer a:hover, .footer a:active, .footer a:focus  {
   color: #716460;
@@ -246,6 +313,13 @@ p {
 .footer .container {
   max-width: 1140px;
   padding: 60px 0;
+}
+.footer-company-logo {
+  height: 65px;
+  margin-top: 90px;
+}
+.footer-company-logo img {
+  height: 100%;
 }
 
 .footer .copyright {
@@ -262,4 +336,7 @@ p {
 .footer-contact h2 {
   color: #716460;
   margin-bottom: 40px;
+}
+.footer-social-icons {
+  height: 20px;
 }

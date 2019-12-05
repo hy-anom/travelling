@@ -84,6 +84,12 @@ p {
   height: 100%;
 }
 
+@media (max-width: 575px) {
+  .btn-round {
+    margin-top: 16px;
+  }
+}
+
 
 /* JUMBOTRON */
 .jumbotron-container {
@@ -107,6 +113,25 @@ p {
   margin-top: 24px;
   margin-bottom: 48px;
 }
+
+@media (max-width: 575px) {
+  .jumbotron-custom {
+    padding: 6rem 1rem 2rem;
+  }
+  .jumbotron-image {
+    height: 330px;
+  }
+
+  .jumbotron-caption {
+    order: 1;
+  }
+  .jumbotron-caption h1 {
+    font-size: 62px;
+    line-height: 68px;
+  }
+
+}
+
 
 
 
@@ -151,6 +176,16 @@ p {
   top: 50%;
   right: -27%;
 }
+@media (max-width: 575px) {
+  .steps {
+    padding: 6rem 0 0;
+  }
+  .steps-cols {
+    margin-bottom: 50px;
+  }
+}
+
+
 
 
 /* FEATURES */
@@ -205,13 +240,32 @@ p {
   background-position-y: 7.5rem;
 }
 
+@media (max-width: 575px) {
+  .features {
+    padding: 4rem 2rem 0;
+  }
+  .feature-text-2 {
+    order: 2;
+  }
+
+  .feature-image-1, .feature-image-2, .feature-image-3 {
+    height: 250px;
+  }
+  .feature-text-1, .feature-text-2, .feature-text-3 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
 
 
 /* DOWNLOAD */
+.download {
+  position: relative;
+  padding-top: 3rem;
+}
 .download-container {
   padding-top: 120px;
 }
-
 .download-image {
   background-size: 70%;
   background-repeat: no-repeat;
@@ -219,7 +273,6 @@ p {
   background-image: url('assets/PNG/iPhone_lg.png');
   height: 400px;
 }
-
 .download-caption {
   line-height: 24px;
 }
@@ -232,42 +285,6 @@ p {
   height: 100%;
 }
 
-
-
-
-
-
-
-/* DOWNLOAD */
-
-.download {
-  position: relative;
-  padding-top: 3rem;
-}
-
-.contact {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-.contact-bg {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: left, right;
-  background-image: url('assets/PNG/footer-doodle-left.png'), url('assets/PNG/footer-doodle-right.png');
-}
-.contact-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-.contact-caption {
-  color: #716460;
-}
-
-.input-contact {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
 .download-sketch {
   height: 200px;
   width: 100%;
@@ -292,6 +309,78 @@ p {
   top: 70px;
 }
 
+@media (max-width: 575px) {
+  .download-sketch {
+    display: none;
+  }
+  .download-symbol {
+    display: none;
+  }
+  .download-container {
+    padding: 0 2rem;
+  }
+  .download-image {
+    order: 2;
+    margin-top: 60px;
+    height: 190px;
+    background-size: 90%;
+  }
+  .download-caption {
+    margin: 30px 0;
+  }
+
+}
+
+
+
+
+
+/* CONTACT */
+
+
+.contact {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.contact-bg {
+  height: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left, right;
+  background-image: url('assets/PNG/footer-doodle-left.png'), url('assets/PNG/footer-doodle-right.png');
+  opacity: 0.3;
+}
+
+.contact-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.contact-form-container {
+  margin-top: -280px;
+}
+
+.contact-caption {
+  color: #716460;
+}
+
+.input-contact {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 575px) {
+  .contact-bg {
+    background-size: 50%, 50%;
+    opacity: 0.2;
+    height: 350px;
+  }
+  .contact {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 1rem;
+  }
+}
 
 
 
@@ -330,7 +419,7 @@ p {
 
 .footer .container {
   max-width: 1140px;
-  padding: 60px 0;
+  padding: 60px 15px;
 }
 .footer-company-logo {
   height: 65px;
@@ -357,4 +446,49 @@ p {
 }
 .footer-social-icons {
   height: 20px;
+}
+
+
+@media (max-width: 575px) {
+ .footer-cols-1 {
+  order: 1;
+  text-align: left;
+  padding: 0 1rem;
+ }
+ .footer-cols-2 {
+  order: 2;
+  text-align: left;
+  padding: 0 1rem 0 0;
+ }
+ .footer-cols-3 {
+  order: 3;
+  text-align: left;
+  padding: 0 1rem;
+  font-size: 18px;
+  margin-top: 30px;
+ }
+ .footer-cols-4 {
+  order: 4;
+  text-align: left;
+  padding: 0 1rem 0 0;
+  margin-top: 30px;
+ }
+ .footer-cols-4 span {
+   font-size: 18px;
+   display: block;
+ }
+ .footer-company-logo {
+   margin-top: 0;
+ }
+
+  .footer-contact {
+    width: auto;
+  }
+  .footer-contact h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  .footer .custom-input-button {
+    width: 100%;
+  }
 }

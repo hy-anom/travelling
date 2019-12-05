@@ -53,7 +53,7 @@
 
   <section class="jumbotron mb-0 jumbotron-custom">
     <div class="row jumbotron-container">
-      <div class="col-lg-4">
+      <div class="col-lg-4 jumbotron-caption">
         <h1 class="mt-5">Make Room for Adventure</h1>
         <p class="lead jumbotron-caption">Collaborative tool that allows you to configure your trip in detail with the members of the trip.</p>
         <div class="input-group mb-3">
@@ -74,11 +74,11 @@
   <!-- STEPS -->
 
   <section class="steps bg-dark-orange">
-    <div class="container text-center">
+    <div class="container text-center steps-container">
       <h3 class="text-center">How does it works?</h3>
       <h2 class="text-center">Just 3 Simple Steps</h2>
       <div class="row">
-        <div class="col-md">
+        <div class="col-md steps-cols">
           <div class="steps-image">
             <img src="assets/PNG/step-1_lg.png" alt="">
             <div class="steps-line d-none d-md-block"></div>
@@ -87,7 +87,7 @@
           <p class="steps-caption ">With our advance smart search system, you can find travel mate easily</p>
 
         </div>
-        <div class="col-md">
+        <div class="col-md steps-cols">
           <div class="steps-image">
             <img src="assets/PNG/step-2_lg.png" alt="">
             <div class="steps-line d-none d-md-block"></div>
@@ -95,7 +95,7 @@
           <p class="steps-title">Send Travel Invitation</p>
           <p class="steps-caption">Once you found them, send cover letter and invitation to travel together</p>
         </div>
-        <div class="col-md">
+        <div class="col-md steps-cols">
           <div class="steps-image"><img src="assets/PNG/step-3_lg.png" alt=""></div>
           <p class="steps-title">Plan a Trip Together</p>
           <p class="steps-caption">A dash board will be created where you together can plan the trip</p>
@@ -176,8 +176,10 @@
 
   <!-- CONTACT -->
 
-  <section class="contact contact-bg">
-    <div class="container">
+  <section class="contact">
+    <div class="container contact-bg">
+    </div>
+    <div class="container contact-form-container">
       <div class="row contact-container">
         <div class="text-center mx-auto">
           <h2>Make adventure together</h2>
@@ -209,16 +211,18 @@
 <footer class="page-footer font-small footer bg-light-orange">
   <div class="container text-center text-md-left">
     <div class="row">
-      <div class="col-lg-4 mx-auto">
+      <div class="col-6 col-lg-4 mx-auto footer-cols-1">
         <div class="footer-company-logo">
           <img src="./assets/PNG/company-logo.png" alt="">
         </div>
         <p class="copyright">Copyright 2019 © All right reserved</p>
       </div>
 
-      <div class="col-lg-2 mx-auto">
-        <p class="font-weight-bold mt-3 mb-4">Company</p>
+      <div class="col-6 col-lg-2 mx-auto footer-cols-3">
         <ul class="list-unstyled">
+          <li>
+            <span class="mt-3 mb-4"><strong>Company</strong></span>
+          </li>
           <li>
             <a href="#!">About Us</a>
           </li>
@@ -231,8 +235,8 @@
         </ul>
       </div>
 
-      <div class="col-lg-2 mx-auto">
-        <p class="font-weight-bold mt-3 mb-4">Connect</p>
+      <div class="col-6 col-lg-2 mx-auto footer-cols-4">
+        <span class="font-weight-bold mb-4">Connect</span>
         <ul class="list-unstyled">
           <li>
             <a href="#!"><img class="footer-social-icons" src="assets/PNG/social-icons.png"></a>
@@ -246,7 +250,7 @@
         </ul>
       </div>
 
-      <div class="col-lg">
+      <div class="col-6 col-lg footer-cols-2">
         <div class="mx-auto footer-contact">
           <h2>Interested to join?</h2>
           <button class="btn btn-primary custom-input-button">Notify Me</button>
